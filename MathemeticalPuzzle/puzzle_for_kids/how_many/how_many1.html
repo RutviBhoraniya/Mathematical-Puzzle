@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>puzzles</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width">
+        <style>
+            body{
+                background-color: #2e2e2e;
+            }
+            p{
+                color: white;
+                text-align: center;
+            }
+            .image{
+                height: 350px;
+                width:500px;
+            }
+            .text{
+                margin-top: 50px;
+            }
+            @media (max-width:600px){
+                .image{
+                    width:300px;
+                    height:200px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div >
+            <p class="text">how many triangle can you see</p>
+            <p>
+                <img class="image" src="../how_many/1.jpeg" />
+            </p>
+            <p>
+                <input type="text" id="ans" />
+            </p>
+            <p>
+                <button onclick="verify()">check</button>
+            </p>
+        </div>
+        
+        <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">prev</a></li>
+                <li class="page-item active"><a class="page-link" href="../how_many/how_many1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="../how_many/how_many2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="../how_many/how_many3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="../how_many/how_many2.html">next</a></li>
+            </ul>
+        
+        <script>
+            function verify(){
+                var ANS=document.getElementById("ans").value;
+                if(ANS=='23'){
+                    document.getElementById("ans").style.color="green";
+                }
+                else{
+                    document.getElementById("ans").style.color="red";
+                }
+            }
+        </script>
+        
+    </body>
+    
+</html>

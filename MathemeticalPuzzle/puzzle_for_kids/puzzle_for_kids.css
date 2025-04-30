@@ -1,0 +1,110 @@
+body{
+    background-color: #2e2e2e
+}
+.title{
+	margin: 50px;
+    font-size: 30px;
+    color: aliceblue;
+}
+.container{
+    margin-top: 120px;
+}
+p{
+    font-size: 17px;
+	color: #ccc;
+	letter-spacing: 1px;
+	line-height: 1.2;
+    color: aliceblue;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.exr{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: aquamarine;
+}
+table{
+    margin-left: 50px;
+}
+td{
+    height:50px;
+    width: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+}
+.gray{
+    background-color: darkgray;
+}
+#ans1,#ans2,#ans3,#ans4,#ans5{
+    display: none;
+}
+.ans{
+    font-size: 20px;
+    color: cornflowerblue;
+}
+.example button{
+	padding: 8px 16px;
+	font-size: 18px;
+	background-color: dodgerblue;
+	color: #ddd;
+	border: 1px solid transparent;
+	border-radius: 25px;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
+	transition: 0.4s;
+    margin-left: 5vw;
+}
+.ex5{
+    width: 500px;
+    margin-left: 50px;
+}
+.fill{
+    background-color: #000;
+}
+.cross tr td span{
+    font-size: 25px;
+    margin-left:20px;
+    text-align: center;
+    font-weight: bold;
+}
+.cross tr td{
+    text-align: left;
+    vertical-align: top;
+    font-size: 15px;
+}
+.condition{
+    display: flex;
+    flex-wrap: wrap;
+}
+.across,.down{
+    flex-basis: 300px;
+}
+h2{
+    color: #fff;
+}
+@media (max-width:650px){
+   td{
+        height:30px;
+        width: 30px;
+        font-size: 15px;
+    }
+    .cross tr td{
+        font-size: 7px;
+    }
+    .cross tr td span{
+        font-size: 25px;
+        margin-left:5px;
+    }
+    .cross{
+        margin: 0 auto;
+    }
+    .ex5{
+        width: 300px;
+    }
+    .across,.down{
+        flex-basis: 100%;
+    }
+}

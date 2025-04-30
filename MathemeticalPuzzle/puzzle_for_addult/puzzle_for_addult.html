@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>puzzles</title>
+        <link rel="stylesheet" href="../header.css">
+        <link rel="stylesheet" href="puzzle_for_addult.css">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="../math_logo.png" alt="logo" />
+            <nav>
+                <button onclick="dropdown()" class="bn">menu</button>
+                <ul id="menulist">
+                    <li class="menu"><a href="../home/home.html">HOME</a></li>
+                    <li class="menu"><a href="../login/login.html">LOGIN</a></li>
+                    <li class="menu"><a href="../puzzle_for_addult/puzzle_for_addult.html">PUZZLE FOR ADDULT</a></li>
+                    <li class="menu"><a href="../puzzle_for_kids/puzzle_for_kids.html">PUZZLE FOR KIDS</a></li>
+                    <li class="menu"><a href="../contactus/contactus.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container1">
+            <ol>
+                <li class="title"><strong>Sudoku</strong></li>
+                <div class="example">
+                    <p>A Sudoku puzzle begins with grid in which some of the numbers are alrady in place, depending on the game difficulty level.Acompleted puzzle is one where each number from 1 to 9 appears only once in each of the 9 rows, column and blocks. </p>
+                    <table border="1" cellspacing=0 align="center">
+                        <tr>
+                            <td></td><td>7</td><td>9</td>
+                            <td class="gray">8</td><td class="gray"></td><td class="gray">2</td>
+                            <td></td><td>6</td><td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td><td></td><td></td>
+                            <td class="gray">9</td><td class="gray"></td><td class="gray"></td>
+                            <td></td><td>1</td><td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td><td></td><td>3</td>
+                            <td class="gray"></td><td class="gray">7</td><td class="gray"></td>
+                            <td></td><td></td><td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="gray"></td><td class="gray">9</td><td class="gray"></td>
+                            <td></td><td></td><td></td>
+                            <td class="gray">3</td><td class="gray">7</td><td class="gray">1</td>
+                        </tr>
+                        <tr>
+                            <td class="gray"></td><td class="gray">6</td><td class="gray">8</td>
+                            <td>7</td><td></td><td></td>
+                            <td class="gray"></td><td class="gray">9</td><td class="gray"></td>
+                        </tr>
+                        <tr>
+                            <td class="gray"></td><td class="gray">3</td><td class="gray">1</td>
+                            <td></td><td>2</td><td></td>
+                            <td class="gray">5</td><td class="gray">8</td><td class="gray"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td><td>8</td><td>6</td>
+                            <td class="gray">5</td><td class="gray"></td><td class="gray"></td>
+                            <td>1</td><td>3</td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td><td></td>
+                            <td class="gray"></td><td class="gray"></td><td class="gray"></td>
+                            <td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td>9</td><td></td><td>4</td>
+                            <td class="gray">3</td><td class="gray"></td><td class="gray"></td>
+                            <td>8</td><td>2</td><td>7</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <button onclick="show1()">show answer</button>
+                    <div id="ans1">
+                        <table border="1" cellspacing=0 align="center">
+                        <tr>
+                            <td>1</td><td>7</td><td>9</td>
+                            <td class="gray">8</td><td class="gray">5</td><td class="gray">2</td>
+                            <td>4</td><td>6</td><td>3</td>
+                        </tr>
+                        <tr>
+                            <td>6</td><td>2</td><td>5</td>
+                            <td class="gray">9</td><td class="gray">3</td><td class="gray">4</td>
+                            <td>7</td><td>1</td><td>8</td>
+                        </tr>
+                        <tr>
+                            <td>8</td><td>4</td><td>3</td>
+                            <td class="gray">1</td><td class="gray">7</td><td class="gray">6</td>
+                            <td>9</td><td>5</td><td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="gray">4</td><td class="gray">9</td><td class="gray">2</td>
+                            <td>6</td><td>8</td><td>5</td>
+                            <td class="gray">3</td><td class="gray">7</td><td class="gray">1</td>
+                        </tr>
+                        <tr>
+                            <td class="gray">5</td><td class="gray">6</td><td class="gray">8</td>
+                            <td>7</td><td>1</td><td>3</td>
+                            <td class="gray">2</td><td class="gray">9</td><td class="gray">4</td>
+                        </tr>
+                        <tr>
+                            <td class="gray">7</td><td class="gray">3</td><td class="gray">1</td>
+                            <td>4</td><td>2</td><td>9</td>
+                            <td class="gray">5</td><td class="gray">8</td><td class="gray">6</td>
+                        </tr>
+                        <tr>
+                            <td>2</td><td>8</td><td>6</td>
+                            <td class="gray">5</td><td class="gray">4</td><td class="gray">7</td>
+                            <td>1</td><td>3</td><td>9</td>
+                        </tr>
+                        <tr>
+                            <td>3</td><td>1</td><td>7</td>
+                            <td class="gray">2</td><td class="gray">9</td><td class="gray">8</td>
+                            <td>6</td><td>4</td><td>5</td>
+                        </tr>
+                        <tr>
+                            <td>9</td><td>5</td><td>4</td>
+                            <td class="gray">3</td><td class="gray">6</td><td class="gray">1</td>
+                            <td>8</td><td>2</td><td>7</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <div><a href="../puzzle_for_addult/sudoku/sudoku1.html" class="exr">click here for exersize</a></div>
+                
+                <li class="title"><strong>Square Math</strong></li>
+                <div class="example">
+                    <p>The goal of the Square Math puzzle is to fill in the empty cells on the board with numbers from 1 to 9 so that they make the equations correct. The puzzle is solved when all the equations are valid.</p>
+                    <table border="1" cellspacing=0 align="center">
+                        <tr>
+                            <td class="light"></td> <td class="dark">-</td> <td class="light">3</td> <td class="dark">+</td> <td class="light">1</td> <td class="dark">=</td> <td class="light">2</td>
+                        </tr>
+                        <tr>
+                            <td class="dark">&times;</td> <td></td> <td class="dark">-</td> <td></td> <td class="dark">+</td> <td></td> <td></td>
+                        </tr>
+                        <tr>
+                            <td class="light">9</td> <td class="dark">-</td> <td class="light"></td> <td class="dark">-</td> <td class="light"></td> <td class="dark">=</td> <td class="light">2</td>
+                        </tr>
+                        <tr>
+                            <td class="dark">+</td> <td></td> <td class="dark">+</td> <td></td> <td class="dark">+</td> <td></td> <td></td>
+                        </tr>
+                        <tr>
+                            <td class="light">7</td> <td class="dark">+</td> <td class="light"></td> <td class="dark">-</td> <td class="light"></td> <td class="dark">=</td> <td class="light">9</td>
+                        </tr>
+                        <tr>
+                            <td class="dark">=</td> <td></td> <td class="dark">=</td> <td></td> <td class="dark">=</td> <td></td> <td></td>
+                        </tr>
+                        <tr>
+                            <td class="light">43</td> <td></td> <td class="light">6</td> <td></td> <td class="light">9</td> <td></td> <td></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <button onclick="show2()">show answer</button>
+                    <div id="ans2">
+                        <table border="1" cellspacing=0 align="center">
+                        <tr>
+                            <td class="light">4</td> <td class="dark">-</td> <td class="light">3</td> <td class="dark">+</td> <td class="light">1</td> <td class="dark">=</td> <td class="light">2</td>
+                        </tr>
+                        <tr>
+                            <td class="dark">&times;</td> <td></td> <td class="dark">-</td> <td></td> <td class="dark">+</td> <td></td> <td></td>
+                        </tr>
+                        <tr>
+                            <td class="light">9</td> <td class="dark">-</td> <td class="light">5</td> <td class="dark">-</td> <td class="light">2</td> <td class="dark">=</td> <td class="light">2</td>
+                        </tr>
+                        <tr>
+                            <td class="dark">+</td> <td></td> <td class="dark">+</td> <td></td> <td class="dark">+</td> <td></td> <td></td>
+                        </tr>
+                        <tr>
+                            <td class="light">7</td> <td class="dark">+</td> <td class="light">8</td> <td class="dark">-</td> <td class="light">6</td> <td class="dark">=</td> <td class="light">9</td>
+                        </tr>
+                        <tr>
+                            <td class="dark">=</td> <td></td> <td class="dark">=</td> <td></td> <td class="dark">=</td> <td></td> <td></td>
+                        </tr>
+                        <tr>
+                            <td class="light">43</td> <td></td> <td class="light">6</td> <td></td> <td class="light">9</td> <td></td> <td></td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <div><a href="../puzzle_for_addult/square_math/square_math1.html" class="exr">click here for exersize</a></div>
+                
+                <li class="title"><strong>Move the Matches</strong></li>
+                <div class="example">
+                    <p>move one match to fix equation</p>
+                    <img class="ex3" src="addult_matches.jpg" />
+                    <br>
+                    <button onclick="show3()">show answer</button>
+                    <div id="ans3">
+                        <img class="ex3" src="addult_matches_ans.jpg" />
+                    </div>
+                </div>
+                <div><a href="../puzzle_for_addult/Move_the_Matches/move_the_matches1.html" class="exr">click here for exersize</a></div>
+                
+                <li class="title"><strong>Replace Quetion Mark with Number</strong></li>
+                <div class="example">
+                    <p>8 10 14 18 ? 34 50 66</p>
+                    <button onclick="show4()">show answer</button>
+                    <div id="ans4">
+                        <p class="ans4">26</p>
+                    </div>
+                </div>
+                <div><a href="../puzzle_for_addult/replace_quetion_mark_with_number/replace_quetion_mark_with_number1.html" class="exr">click here for exersize</a></div>
+            </ol>
+        </div>
+        
+        
+        <script>
+            function dropdown(){
+                var s=document.getElementById("menulist");
+                if(s.style.display === "none"){
+                    s.style.display = "block";
+                    s.style.position = "fixed"
+                    s.style.zIndex = "30";
+                    s.style.marginTop = "50px"
+                }
+                else{
+                    s.style.display = "none";
+                }   
+            }
+            function show1(){
+                var s=document.getElementById("ans1");
+                if(s.style.display === "none"){
+                    s.style.display = "block";
+                }
+                else{
+                    s.style.display = "none";
+                }
+            }
+            function show2(){
+                var s=document.getElementById("ans2");
+                if(s.style.display === "none"){
+                    s.style.display = "block";
+                }
+                else{
+                    s.style.display = "none";
+                }
+            }
+            function show3(){
+                var s=document.getElementById("ans3");
+                if(s.style.display === "none"){
+                    s.style.display = "block";
+                }
+                else{
+                    s.style.display = "none";
+                }
+            }
+            function show4(){
+                var s=document.getElementById("ans4");
+                if(s.style.display === "none"){
+                    s.style.display = "block";
+                }
+                else{
+                    s.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>

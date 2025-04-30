@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>puzzles</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width">
+        <style>
+            body{
+                background-color: #2e2e2e;
+            }
+            p{
+                color: white;
+                text-align: center;
+            }
+            .image{
+                height: 300px;
+                width:500px;
+            }
+            .text{
+                margin-top: 50px;
+            }
+            @media (max-width:600px){
+                .image{
+                    width:300px;
+                    height:170px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div >
+            <p class="text">find the values of given</p>
+            <p><img class="image" src="../find_mising_value/2.jpg" /></p>
+            
+            <p>Yellow Pot</p>
+            <p><input type="text" id="ans1" /></p>
+            
+            <p>Orange Pot</p>
+            <p><input type="text" id="ans2" /></p>
+            
+            <p>Purple Pot</p>
+            <p><input type="text" id="ans3" /></p>
+            
+            <p><button onclick="verify()">check</button></p>
+        </div>
+        
+        <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="../find_mising_value/find_mising_value1.html">prev</a></li>
+                <li class="page-item"><a class="page-link" href="../find_mising_value/find_mising_value1.html">1</a></li>
+                <li class="page-item active"><a class="page-link" href="../find_mising_value/find_mising_value2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="../find_mising_value/find_mising_value3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="../find_mising_value/find_mising_value3.html">next</a></li>
+            </ul>
+        
+        <script>
+            function verify(){
+                var ANS1=document.getElementById("ans1").value;
+                if(ANS1=='17'){
+                    document.getElementById("ans1").style.color="green";
+                }
+                else{
+                    document.getElementById("ans1").style.color="red";
+                }
+                
+                var ANS2=document.getElementById("ans2").value;
+                if(ANS2=='0'){
+                    document.getElementById("ans2").style.color="green";
+                }
+                else{
+                    document.getElementById("ans2").style.color="red";
+                }
+                
+                var ANS3=document.getElementById("ans3").value;
+                if(ANS3=='17'){
+                    document.getElementById("ans3").style.color="green";
+                }
+                else{
+                    document.getElementById("ans3").style.color="red";
+                }
+            }
+        </script>
+        
+    </body>
+    
+</html>

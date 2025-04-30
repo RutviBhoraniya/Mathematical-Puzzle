@@ -1,0 +1,133 @@
+<!DOCTYPE   html>
+<html>
+    <head>
+        <title>puzzles</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../puzzle_for_kids.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            input{
+                height: 90%;
+                width: 90%;
+                border: none;
+                text-align: center;
+            }
+            table{
+                margin: 50px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <table>
+                        <tr>
+                            <td class="gray">2</td>
+                            <td class="gray">1</td>
+                            <td><input type="text" id="t13" onkeyup="t13()" /></td>
+                            <td><input type="text" id="t14" onkeyup="t14()" /></td>
+                        </tr>
+                        <tr>
+                            <td class="gray"><input class="gray" type="text" id="t21" onkeyup="t21()" /></td>
+                            <td class="gray">4</td>
+                            <td>2</td>
+                            <td><input type="text" id="t24" onkeyup="t24()" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="t31" onkeyup="t31()" /></td>
+                            <td>3</td>
+                            <td class="gray">1</td>
+                            <td class="gray"><input class="gray" type="text" id="t34" onkeyup="t34()" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="t41" onkeyup="t41()" /></td>
+                            <td><input type="text" id="t42" onkeyup="t42()" /></td>
+                            <td class="gray">3</td>
+                            <td class="gray">4</td>
+                        </tr>
+                </table>
+            </div>
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="../simple_sudoku/simple_sudoku2.html">prev</a></li>
+                <li class="page-item"><a class="page-link" href="../simple_sudoku/simple_sudoku2.html">2</a></li>
+                <li class="page-item active"><a class="page-link" href="../simple_sudoku/simple_sudoku3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="../simple_sudoku/simple_sudoku4.html">4</a></li>
+                <li class="page-item"><a class="page-link" href="../simple_sudoku/simple_sudoku4.html">next</a></li>
+            </ul>
+        </div>
+        <script>
+            function t13(){
+                var T13=document.getElementById("t13").value;
+                if(T13=='4'){
+                    document.getElementById("t13").style.color="green";
+                }
+                else{
+                    document.getElementById("t13").style.color="red";
+                }
+            }
+            function t14(){
+                var T14=document.getElementById("t14").value;
+                if(T14=='3'){
+                    document.getElementById("t14").style.color="green";
+                }
+                else{
+                    document.getElementById("t14").style.color="red";
+                }
+            }
+            function t21(){
+                var T21=document.getElementById("t21").value;
+                if(T21=='3'){
+                    document.getElementById("t21").style.color="green";
+                }
+                else{
+                    document.getElementById("t21").style.color="red";
+                }
+            }
+            function t24(){
+                var T24=document.getElementById("t24").value;
+                if(T24=='1'){
+                    document.getElementById("t24").style.color="green";
+                }
+                else{
+                    document.getElementById("t24").style.color="red";
+                }
+            }
+            function t31(){
+                var T31=document.getElementById("t31").value;
+                if(T31=='4'){
+                    document.getElementById("t31").style.color="green";
+                }
+                else{
+                    document.getElementById("t31").style.color="red";
+                }
+            }
+            function t34(){
+                var T34=document.getElementById("t34").value;
+                if(T34=='2'){
+                    document.getElementById("t34").style.color="green";
+                }
+                else{
+                    document.getElementById("t34").style.color="red";
+                }
+            }
+            function t41(){
+                var T41=document.getElementById("t41").value;
+                if(T41=='1'){
+                    document.getElementById("t41").style.color="green";
+                }
+                else{
+                    document.getElementById("t41").style.color="red";
+                }
+            }
+            function t42(){
+                var T42=document.getElementById("t42").value;
+                if(T42=='2'){
+                    document.getElementById("t42").style.color="green";
+                }
+                else{
+                    document.getElementById("t42").style.color="red";
+                }
+            }
+        </script>
+    </body>
+</html>

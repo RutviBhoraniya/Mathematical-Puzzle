@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>puzzles</title>
+        <link rel="stylesheet" href="../header.css">
+        <link rel="stylesheet" href="home.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="../math_logo.png" alt="logo" />
+            <nav>
+                <button onclick="dropdown()" class="bn">menu</button>
+                <ul id="menulist">
+                    <li class="menu"><a href="../home/home.html">HOME</a></li>
+                    <li class="menu"><a href="../login/login.html">LOGIN</a></li>
+                    <li class="menu"><a href="../puzzle_for_addult/puzzle_for_addult.html">PUZZLE FOR ADDULT</a></li>
+                    <li class="menu"><a href="../puzzle_for_kids/puzzle_for_kids.html">PUZZLE FOR KIDS</a></li>
+                    <li class="menu"><a href="../contactus/contactus.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container1">
+            <div class="background">
+                    <img src="home-background.jpg" height="100%" width="10%">
+                </div>
+            <div class="container2">
+                <div class="title">
+                    <h1><strong>Mathamatic Puzzle</strong></h1>
+                </div>
+                <hr>
+                <div  class="td">
+                    <h3>Test Your Brain</h3>
+                </div>
+            </div>
+        </div>
+        <script>
+            function dropdown(){
+                var s=document.getElementById("menulist");
+                if(s.style.display === "none"){
+                    s.style.display = "block";
+                    s.style.position = "fixed"
+                    s.style.zIndex = "30";
+                    s.style.marginTop = "50px";
+                }
+                else{
+                    s.style.display = "none";
+                }   
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE   html>
+<html>
+    <head>
+        <title>puzzles</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../puzzle_for_addult.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            input{
+                height: 90%;
+                width: 90%;
+                border: none;
+                text-align: center;
+            }
+            table{
+                margin: 50px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+               <table border=1 cellspacing=0 align="center">
+                    <tr>
+                        <td><input type="text" id="t11" onkeyup="t11()" /></td>
+                        <td>7</td>
+                        <td>9</td>
+                        <td class="gray">8</td>
+                        <td class="gray"><input class="gray" type="text" id="t15" onkeyup="t15()" /></td>
+                        <td class="gray">2</td>
+                        <td><input type="text" id="t17" onkeyup="t17()" /></td>
+                        <td>6</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><input type="text" id="t22" onkeyup="t22()" /></td>
+                        <td><input type="text" id="t23" onkeyup="t23()" /></td>
+                        <td class="gray">9</td>
+                        <td class="gray"><input class="gray" type="text" id="t25" onkeyup="t25()" /></td>
+                        <td class="gray"><input class="gray" type="text" id="t26" onkeyup="t26()" /></td>
+                        <td><input type="text" id="t27" onkeyup="t27()" /></td>
+                        <td>1</td>
+                        <td><input type="text" id="t29" onkeyup="t29()" /></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><input type="text" id="t32" onkeyup="t32()" /></td>
+                        <td>3</td>
+                        <td class="gray"><input class="gray" type="text" id="t34" onkeyup="t34()" /></td>
+                        <td class="gray">7</td>
+                        <td class="gray"><input class="gray" type="text" id="t36" onkeyup="t36()" /></td>
+                        <td><input type="text" id="t37" onkeyup="t37()" /></td>
+                        <td><input type="text" id="t38" onkeyup="t38()" /></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input class="gray" type="text" id="t41" onkeyup="t41()" /></td>
+                        <td class="gray">9</td>
+                        <td class="gray"><input class="gray" type="text" id="t43" onkeyup="t43()" /></td>
+                        <td><input type="text" id="t44" onkeyup="t44()" /></td>
+                        <td><input type="text" id="t45" onkeyup="t45()" /></td>
+                        <td><input type="text" id="t46" onkeyup="t46()" /></td>
+                        <td class="gray">3</td>
+                        <td class="gray">7</td>
+                        <td class="gray">1</td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input class="gray" type="text" id="t51" onkeyup="t51()" /></td>
+                        <td class="gray">6</td>
+                        <td class="gray">8</td>
+                        <td>7</td>
+                        <td><input type="text" id="t55" onkeyup="t55()" /></td>
+                        <td><input type="text" id="t56" onkeyup="t56()" /></td>
+                        <td class="gray"><input class="gray" type="text" id="t57" onkeyup="t57()" /></td>
+                        <td class="gray">9</td>
+                        <td class="gray"><input class="gray" type="text" id="t59" onkeyup="t59()" /></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input class="gray" type="text" id="t61" onkeyup="t61()" /></td>
+                        <td class="gray">3</td>
+                        <td class="gray">1</td>
+                        <td><input type="text" id="t64" onkeyup="t64()" /></td>
+                        <td>2</td>
+                        <td><input type="text" id="t66" onkeyup="t66()" /></td>
+                        <td class="gray">5</td>
+                        <td class="gray">8</td>
+                        <td class="gray"><input class="gray" type="text" id="t69" onkeyup="t69()" /></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td class="gray">5</td>
+                        <td class="gray"><input class="gray" type="text" id="t75" onkeyup="t75()" /></td>
+                        <td class="gray"><input class="gray" type="text" id="t76" onkeyup="t76()" /></td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td><input type="text" id="t79" onkeyup="t79()" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="t81" onkeyup="t81()" /></td>
+                        <td><input type="text" id="t82" onkeyup="t82()" /></td>
+                        <td><input type="text" id="t83" onkeyup="t83()" /></td>
+                        <td class="gray"><input class="gray" type="text" id="t84" onkeyup="t84()" /></td>
+                        <td class="gray"><input class="gray" type="text" id="t85" onkeyup="t85()" /></td>
+                        <td class="gray"><input class="gray" type="text" id="t86" onkeyup="t86()" /></td>
+                        <td><input type="text" id="t87" onkeyup="t87()" /></td>
+                        <td><input type="text" id="t88" onkeyup="t88()" /></td>
+                        <td><input type="text" id="t89" onkeyup="t89()" /></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><input type="text" id="t92" onkeyup="t92()" /></td>
+                        <td>4</td>
+                        <td class="gray">3</td>
+                        <td class="gray"><input class="gray" type="text" id="t95" onkeyup="t95()" /></td>
+                        <td class="gray"><input class="gray" type="text" id="t96" onkeyup="t96()" /></td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>7</td>
+                    </tr>
+                </table>
+            </div>
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">prev</a></li>
+                <li class="page-item active"><a class="page-link" href="../sudoku/sudoku1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="../sudoku/sudoku2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="../sudoku/sudoku3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="../sudoku/sudoku2.html">next</a></li>
+            </ul>
+        </div>
+        <script>
+            function t11(){
+                var T11=document.getElementById("t11").value;
+                if(T11=='1'){
+                    document.getElementById("t11").style.color="green";
+                }
+                else{
+                    document.getElementById("t11").style.color="red";
+                }
+            }
+            function t15(){
+                var T15=document.getElementById("t15").value;
+                if(T15=='5'){
+                    document.getElementById("t15").style.color="green";
+                }
+                else{
+                    document.getElementById("t15").style.color="red";
+                }
+            }
+            function t17(){
+                var T17=document.getElementById("t17").value;
+                if(T17=='4'){
+                    document.getElementById("t17").style.color="green";
+                }
+                else{
+                    document.getElementById("t17").style.color="red";
+                }
+            }
+            function t22(){
+                var T22=document.getElementById("t22").value;
+                if(T22=='2'){
+                    document.getElementById("t22").style.color="green";
+                }
+                else{
+                    document.getElementById("t22").style.color="red";
+                }
+            }
+            function t23(){
+                var T23=document.getElementById("t23").value;
+                if(T23=='5'){
+                    document.getElementById("t23").style.color="green";
+                }
+                else{
+                    document.getElementById("t23").style.color="red";
+                }
+            }
+            function t25(){
+                var T25=document.getElementById("t25").value;
+                if(T25=='3'){
+                    document.getElementById("t25").style.color="green";
+                }
+                else{
+                    document.getElementById("t25").style.color="red";
+                }
+            }
+            function t26(){
+                var T26=document.getElementById("t26").value;
+                if(T26=='4'){
+                    document.getElementById("t26").style.color="green";
+                }
+                else{
+                    document.getElementById("t26").style.color="red";
+                }
+            }
+            function t27(){
+                var T27=document.getElementById("t27").value;
+                if(T27=='7'){
+                    document.getElementById("t27").style.color="green";
+                }
+                else{
+                    document.getElementById("t27").style.color="red";
+                }
+            }
+            function t29(){
+                var T29=document.getElementById("t29").value;
+                if(T29=='8'){
+                    document.getElementById("t29").style.color="green";
+                }
+                else{
+                    document.getElementById("t29").style.color="red";
+                }
+            }
+            function t32(){
+                var T32=document.getElementById("t32").value;
+                if(T32=='4'){
+                    document.getElementById("t32").style.color="green";
+                }
+                else{
+                    document.getElementById("t32").style.color="red";
+                }
+            }
+            function t34(){
+                var T34=document.getElementById("t34").value;
+                if(T34=='1'){
+                    document.getElementById("t34").style.color="green";
+                }
+                else{
+                    document.getElementById("t34").style.color="red";
+                }
+            }
+            function t36(){
+                var T36=document.getElementById("t36").value;
+                if(T36=='6'){
+                    document.getElementById("t36").style.color="green";
+                }
+                else{
+                    document.getElementById("t36").style.color="red";
+                }
+            }
+            function t37(){
+                var T37=document.getElementById("t37").value;
+                if(T37=='9'){
+                    document.getElementById("t37").style.color="green";
+                }
+                else{
+                    document.getElementById("t37").style.color="red";
+                }
+            }
+            function t38(){
+                var T38=document.getElementById("t38").value;
+                if(T38=='5'){
+                    document.getElementById("t38").style.color="green";
+                }
+                else{
+                    document.getElementById("t38").style.color="red";
+                }
+            }
+            function t41(){
+                var T41=document.getElementById("t41").value;
+                if(T41=='4'){
+                    document.getElementById("t41").style.color="green";
+                }
+                else{
+                    document.getElementById("t41").style.color="red";
+                }
+            }
+            function t43(){
+                var T43=document.getElementById("t43").value;
+                if(T43=='2'){
+                    document.getElementById("t43").style.color="green";
+                }
+                else{
+                    document.getElementById("t43").style.color="red";
+                }
+            }
+            function t44(){
+                var T44=document.getElementById("t44").value;
+                if(T44=='6'){
+                    document.getElementById("t44").style.color="green";
+                }
+                else{
+                    document.getElementById("t44").style.color="red";
+                }
+            }
+            function t45(){
+                var T45=document.getElementById("t45").value;
+                if(T45=='8'){
+                    document.getElementById("t45").style.color="green";
+                }
+                else{
+                    document.getElementById("t45").style.color="red";
+                }
+            }
+            function t46(){
+                var T46=document.getElementById("t46").value;
+                if(T46=='5'){
+                    document.getElementById("t46").style.color="green";
+                }
+                else{
+                    document.getElementById("t46").style.color="red";
+                }
+            }
+            function t51(){
+                var T51=document.getElementById("t51").value;
+                if(T51=='5'){
+                    document.getElementById("t51").style.color="green";
+                }
+                else{
+                    document.getElementById("t51").style.color="red";
+                }
+            }
+            function t55(){
+                var T55=document.getElementById("t55").value;
+                if(T55=='1'){
+                    document.getElementById("t55").style.color="green";
+                }
+                else{
+                    document.getElementById("t55").style.color="red";
+                }
+            }
+            function t56(){
+                var T56=document.getElementById("t56").value;
+                if(T56=='3'){
+                    document.getElementById("t56").style.color="green";
+                }
+                else{
+                    document.getElementById("t56").style.color="red";
+                }
+            }
+            function t57(){
+                var T57=document.getElementById("t57").value;
+                if(T57=='2'){
+                    document.getElementById("t57").style.color="green";
+                }
+                else{
+                    document.getElementById("t57").style.color="red";
+                }
+            }
+            function t59(){
+                var T59=document.getElementById("t59").value;
+                if(T59=='4'){
+                    document.getElementById("t59").style.color="green";
+                }
+                else{
+                    document.getElementById("t59").style.color="red";
+                }
+            }
+            function t61(){
+                var T61=document.getElementById("t61").value;
+                if(T61=='7'){
+                    document.getElementById("t61").style.color="green";
+                }
+                else{
+                    document.getElementById("t61").style.color="red";
+                }
+            }
+            function t64(){
+                var T64=document.getElementById("t64").value;
+                if(T64=='4'){
+                    document.getElementById("t64").style.color="green";
+                }
+                else{
+                    document.getElementById("t64").style.color="red";
+                }
+            }
+            function t66(){
+                var T66=document.getElementById("t66").value;
+                if(T66=='9'){
+                    document.getElementById("t66").style.color="green";
+                }
+                else{
+                    document.getElementById("t66").style.color="red";
+                }
+            }
+            function t69(){
+                var T69=document.getElementById("t69").value;
+                if(T69=='6'){
+                    document.getElementById("t69").style.color="green";
+                }
+                else{
+                    document.getElementById("t69").style.color="red";
+                }
+            }
+            function t75(){
+                var T75=document.getElementById("t75").value;
+                if(T75=='4'){
+                    document.getElementById("t75").style.color="green";
+                }
+                else{
+                    document.getElementById("t75").style.color="red";
+                }
+            }
+            function t76(){
+                var T76=document.getElementById("t76").value;
+                if(T76=='7'){
+                    document.getElementById("t76").style.color="green";
+                }
+                else{
+                    document.getElementById("t76").style.color="red";
+                }
+            }
+            function t79(){
+                var T79=document.getElementById("t79").value;
+                if(T79=='9'){
+                    document.getElementById("t79").style.color="green";
+                }
+                else{
+                    document.getElementById("t79").style.color="red";
+                }
+            }
+            function t81(){
+                var T81=document.getElementById("t81").value;
+                if(T81=='3'){
+                    document.getElementById("t81").style.color="green";
+                }
+                else{
+                    document.getElementById("t81").style.color="red";
+                }
+            }
+            function t82(){
+                var T82=document.getElementById("t82").value;
+                if(T82=='1'){
+                    document.getElementById("t82").style.color="green";
+                }
+                else{
+                    document.getElementById("t82").style.color="red";
+                }
+            }
+            function t83(){
+                var T83=document.getElementById("t83").value;
+                if(T83=='7'){
+                    document.getElementById("t83").style.color="green";
+                }
+                else{
+                    document.getElementById("t83").style.color="red";
+                }
+            }
+            function t84(){
+                var T84=document.getElementById("t84").value;
+                if(T84=='2'){
+                    document.getElementById("t84").style.color="green";
+                }
+                else{
+                    document.getElementById("t84").style.color="red";
+                }
+            }
+            function t85(){
+                var T85=document.getElementById("t85").value;
+                if(T85=='9'){
+                    document.getElementById("t85").style.color="green";
+                }
+                else{
+                    document.getElementById("t85").style.color="red";
+                }
+            }
+            function t86(){
+                var T86=document.getElementById("t86").value;
+                if(T86=='8'){
+                    document.getElementById("t86").style.color="green";
+                }
+                else{
+                    document.getElementById("t86").style.color="red";
+                }
+            }
+            function t87(){
+                var T87=document.getElementById("t87").value;
+                if(T87=='6'){
+                    document.getElementById("t87").style.color="green";
+                }
+                else{
+                    document.getElementById("t87").style.color="red";
+                }
+            }
+            function t88(){
+                var T88=document.getElementById("t88").value;
+                if(T88=='4'){
+                    document.getElementById("t88").style.color="green";
+                }
+                else{
+                    document.getElementById("t88").style.color="red";
+                }
+            }
+            function t89(){
+                var T89=document.getElementById("t89").value;
+                if(T89=='5'){
+                    document.getElementById("t89").style.color="green";
+                }
+                else{
+                    document.getElementById("t89").style.color="red";
+                }
+            }
+            function t92(){
+                var T92=document.getElementById("t92").value;
+                if(T92=='5'){
+                    document.getElementById("t92").style.color="green";
+                }
+                else{
+                    document.getElementById("t92").style.color="red";
+                }
+            }
+            function t95(){
+                var T95=document.getElementById("t95").value;
+                if(T95=='6'){
+                    document.getElementById("t95").style.color="green";
+                }
+                else{
+                    document.getElementById("t95").style.color="red";
+                }
+            }
+            function t96(){
+                var T96=document.getElementById("t96").value;
+                if(T96=='1'){
+                    document.getElementById("t96").style.color="green";
+                }
+                else{
+                    document.getElementById("t96").style.color="red";
+                }
+            }
+
+        </script>
+    </body>
+</html>
